@@ -526,6 +526,10 @@ static void gma_pm_init_post_vbios(struct device *dev)
 		gtt_write(0xc4030, reg32);
 	}
 
+    /* Turn the panel power on using eDP VDD Override */
+    gtt_write(PCH_PP_CONTROL, gtt_read(PCH_PP_CONTROL) | PCH_PP_UNLOCK | EDP_FORCE_VDD);
+    udelay(125000); /* And wait until it powers up */
+
 	/* Setup Panel Power On Delays */
 	reg32 = gtt_read(0xc7208);
 	if (!reg32) {
