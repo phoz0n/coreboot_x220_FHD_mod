@@ -1,3 +1,9 @@
+**⚠️ WARNING: WORK IN PROGRESS ⚠️**  
+===============
+> 🚧 **This is a work-in-progress fork of the up-to-date [coreboot](https://github.com/coreboot/coreboot repository, including the [daduke coreboot FHD patch](https://github.com/daduke/coreboot).**  
+> 🧪 I have **not tested** this yet.  
+> ❗ **Use at your own risk!**
+
 coreboot README
 ===============
 
